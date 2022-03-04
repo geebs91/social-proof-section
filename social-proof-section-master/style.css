@@ -1,0 +1,211 @@
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Spartan', sans-serif; 
+    background-color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin: 4%;
+    background-image: 
+    url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+background-position:
+    top left, /* this positions the first image */
+    bottom right; /* this positions the second image */
+background-repeat:
+    no-repeat; /* this applies to both images */
+background-size: auto;
+}
+
+h1 {
+    color:hsl(300, 43%, 22%);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+h3 {
+    color:hsl(300, 43%, 22%);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+p {
+    color: hsl(300, 24%, 96%);
+    font-size: 15px;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+/*mobile first layout*/
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+/*rating cards */
+
+.rating-card {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px 25px 1px 25px;
+    max-width: 310px;
+}
+.star-rating {
+    margin: 5px 5px -10px;
+}
+
+
+/*testimonial cards */
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 40px 30px 25px 30px;
+    margin: 30px 20px auto;
+    max-width: 300px;
+}
+
+.testimonial-card p {
+    text-align: left;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.card-header h3  {
+    color:#fff;
+    margin-left: 20px;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+}
+
+
+.attribution {
+    padding: 10px;
+    margin: 10px;
+}
+
+/*desktop layout*/
+
+@media  (min-width: 600px)  {
+
+body {
+    background-image: 
+        url(./images/bg-pattern-top-desktop.svg),
+        url(./images/bg-pattern-bottom-desktop.svg);
+    background-position:
+        top left, /* this positions the first image */
+        bottom right; /* this positions the second image */
+    background-repeat:
+        no-repeat; /* this applies to both images */
+    background-size: auto;
+}
+
+#intro, #testimonials {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+    padding-top: 3%;
+   }
+
+.intro-text {
+    text-align: left;
+    max-width: 45%;
+}
+
+.intro-text h1 {
+    max-width: 80%;
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+
+/*desktop ratings staggered layout*/
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 5px;
+    width: 600px;
+    max-width: 60%;
+}
+
+.rating-card {
+    margin: 10px 0 10px 0;
+    margin-right: 0px;
+    width: 388px;
+    max-width: 388px;
+    padding: 20px;
+}
+
+.star-rating {
+    margin: 0px 5px -2px;
+}
+
+.rating-card h3 {
+    display: inline ;
+}
+
+.rating-card:nth-child(1){
+    margin-right: 20%;
+}
+
+.rating-card:nth-child(2){
+    margin-right: 10%;
+}
+
+/*desktop testimonial staggered layout*/
+
+.testimonial-card {
+    height: 220px;
+}
+
+.testimonial-card:nth-child(2){
+    margin-top: 4%;
+}
+
+.testimonial-card:nth-child(3){
+    margin-top: 6%;
+}
+    
+}
